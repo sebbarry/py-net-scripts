@@ -49,7 +49,7 @@ def reach_ip(ip=None):
     if ip == None: 
         print("unreachable. ip is None")
         return
-
+     
     ping_reply = subprocess.call(
             'ping %s /n 2' % (ip), 
             stdout=subprocess.DEVNULL, 
